@@ -1,0 +1,171 @@
+/* HEADER */
+.session-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.session-header h1 {
+  margin-bottom: 4px;
+}
+
+.session-header p {
+  color: #777;
+  font-size: 14px;
+}
+
+.btn-new {
+  background: #4c3cff;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* SUMMARY */
+.session-summary {
+  display: flex;
+  gap: 20px;
+  margin: 25px 0;
+}
+
+.summary-card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.summary-card h2 {
+  margin-top: 6px;
+}
+
+.summary-card.live {
+  background: #ecfdf3;
+}
+
+.summary-card.scheduled {
+  background: #eef4ff;
+}
+
+.summary-card.completed {
+  background: #f4efff;
+}
+
+.summary-card .icon {
+  font-size: 22px;
+}
+
+/* FILTER */
+.session-filter {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.session-filter input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.session-filter select {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+/* TABS */
+.session-tabs {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+  background: #f0f0f0;
+  padding: 6px;
+  border-radius: 30px;
+  width: fit-content;
+}
+
+.session-tabs span {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.session-tabs span.active {
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+/* LIST */
+.session-list {
+  display: flex;
+  gap: 20px;
+}
+
+/* CARD */
+.session-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.live-badge {
+  background: #22c55e;
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+.join-btn {
+  background: #fff;
+  border: 1px solid #22c55e;
+  color: #22c55e;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.instructor {
+  font-size: 14px;
+  color: #777;
+}
+
+.languages {
+  margin: 12px 0;
+}
+
+.languages span {
+  background: #eef4ff;
+  color: #4c3cff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-right: 6px;
+}
+
+.card-info {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: #555;
+}

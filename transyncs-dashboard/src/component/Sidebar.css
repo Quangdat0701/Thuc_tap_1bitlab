@@ -1,0 +1,46 @@
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #eee;
+}
+
+.logo h2 {
+  color: #4C3CFF;
+}
+
+.logo span {
+  font-size: 12px;
+  color: #777;
+}
+
+.sidebar nav {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar nav a {
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #555;
+  text-decoration: none;
+}
+
+.sidebar nav a.active {
+  background: #f0efff;
+  color: #4C3CFF;
+  font-weight: 600;
+}
+
+.signout {
+  margin-top: auto;
+  color: #777;
+  cursor: pointer;
+}
+
+.content { flex: 1; padding: 30px; background: #f7f8fc; color: #111; opacity: 1; }

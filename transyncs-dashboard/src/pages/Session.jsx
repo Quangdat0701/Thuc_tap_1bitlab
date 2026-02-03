@@ -1,6 +1,5 @@
 import DashboardLayout from "../layout/DashboardLayout";
 import { useNavigate } from "react-router-dom";
-
 import "./Session.css";
 
 function Session() {
@@ -15,10 +14,12 @@ function Session() {
           <p>Welcome back, Instructor</p>
         </div>
 
-        <button className="btn-new" onClick={() => navigate("/sessions/new")}>
-  + New Session
-</button>
-
+        <button
+          className="btn-new"
+          onClick={() => navigate("/sessions/new")}
+        >
+          + New Session
+        </button>
       </div>
 
       {/* SUMMARY */}
@@ -76,6 +77,7 @@ function Session() {
           duration="45 min"
           lang1="French"
           lang2="English"
+          onJoin={() => navigate("/sessions/join")}
         />
 
         <SessionCard
@@ -85,13 +87,14 @@ function Session() {
           duration="50 min"
           lang1="Spanish"
           lang2="English"
+          onJoin={() => navigate("/sessions/join")}
         />
       </div>
     </DashboardLayout>
   );
 }
 
-/* CARD */
+/* SESSION CARD */
 function SessionCard({
   title,
   instructor,
@@ -99,12 +102,15 @@ function SessionCard({
   duration,
   lang1,
   lang2,
+  onJoin,
 }) {
   return (
     <div className="session-card">
       <div className="card-top">
         <span className="live-badge">LIVE NOW</span>
-        <button className="join-btn">Join Now</button>
+        <button className="join-btn" onClick={onJoin}>
+          Join Now
+        </button>
       </div>
 
       <h3>{title}</h3>

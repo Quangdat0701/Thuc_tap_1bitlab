@@ -5,6 +5,8 @@ import Schedule from "./pages/Schedule";
 import Participants from "./pages/Participants";
 import Settings from "./pages/Setting";
 import CreateSession from "./pages/CreateSession";
+import JoinSession from "./pages/JoinSession";
+
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
         <Route path="/participants" element={<Participants />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/sessions/new" element={<CreateSession />} />
+        <Route path="/sessions/join" element={<JoinSession />} />
+
 
       </Routes>
     </BrowserRouter>

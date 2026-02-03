@@ -1,7 +1,11 @@
 import DashboardLayout from "../layout/DashboardLayout";
+import { useNavigate } from "react-router-dom";
+
 import "./Session.css";
 
 function Session() {
+  const navigate = useNavigate();
+
   return (
     <DashboardLayout>
       {/* HEADER */}
@@ -11,7 +15,10 @@ function Session() {
           <p>Welcome back, Instructor</p>
         </div>
 
-        <button className="btn-new">+ New Session</button>
+        <button className="btn-new" onClick={() => navigate("/sessions/new")}>
+  + New Session
+</button>
+
       </div>
 
       {/* SUMMARY */}

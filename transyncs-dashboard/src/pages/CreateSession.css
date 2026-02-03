@@ -1,0 +1,100 @@
+.create-session-page {
+  padding: 30px;
+  width: 100%;
+  /* ❌ KHÔNG DÙNG FLEX CENTER */
+}
+
+/* BACK */
+.back {
+  color: #000000;
+  cursor: pointer;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+/* FORM */
+.form-wrapper {
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+
+  width: 100%;
+  max-width: 1200px;   /* ✅ RỘNG ĐẸP */
+  margin: 0 auto;      /* ✅ CĂN GIỮA ĐÚNG */
+}
+
+/* TEXT */
+.subtitle {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* FORM ELEMENT */
+label {
+  font-weight: 650;
+  margin-top: 14px;
+  display: block;
+  color: #000000;
+  
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  margin-top: 6px;
+  background: #f6f5f5;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* ROW */
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.row > div {
+  flex: 1;
+}
+
+/* ACTIONS */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.btn-cancel {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #4c3cff;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-primary:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}

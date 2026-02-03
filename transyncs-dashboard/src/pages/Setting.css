@@ -1,0 +1,118 @@
+.page-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.subtitle h3 {
+  margin: 0;
+}
+
+.subtitle p {
+  margin-top: 4px;
+  color: #777;
+  font-size: 14px;
+}
+
+/* CARD */
+.settings-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* FORM */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #f9fafb;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  resize: none;
+  height: 80px;
+}
+
+/* BUTTON */
+.btn-primary {
+  background: #4c3cff;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+/* TOGGLE */
+.toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-top: 1px solid #eee;
+}
+
+.toggle-row:first-of-type {
+  border-top: none;
+}
+
+.toggle-row p {
+  margin-top: 2px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* SWITCH */
+.toggle-row input[type="checkbox"] {
+  width: 36px;
+  height: 20px;
+  appearance: none;
+  background: #d1d5db;
+  border-radius: 999px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+
+.toggle-row input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: 0.2s;
+}
+
+.toggle-row input[type="checkbox"]:checked {
+  background: #4c3cff;
+}
+
+.toggle-row input[type="checkbox"]:checked::before {
+  transform: translateX(16px);
+}

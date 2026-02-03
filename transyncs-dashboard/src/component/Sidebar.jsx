@@ -12,21 +12,10 @@ function Sidebar() {
       </div>
 
       <nav>
-        <NavLink to="/sessions" className={({ isActive }) => isActive ? "active" : ""}>
-          Sessions
-        </NavLink>
-
-        <NavLink to="/schedule" className={({ isActive }) => isActive ? "active" : ""}>
-          Schedule
-        </NavLink>
-
-        <NavLink to="/participants" className={({ isActive }) => isActive ? "active" : ""}>
-          Participants
-        </NavLink>
-
-        <NavLink to="/settings" className={({ isActive }) => isActive ? "active" : ""}>
-          Settings
-        </NavLink>
+        <NavLink to="/sessions">Sessions</NavLink>
+        <NavLink to="/schedule">Schedule</NavLink>
+        <NavLink to="/participants">Participants</NavLink>
+        <NavLink to="/settings">Settings</NavLink>
       </nav>
 
       <div className="signout" onClick={() => navigate("/")}>
